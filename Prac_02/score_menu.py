@@ -42,4 +42,4 @@ while choice != "q":
         choice = input("Choice: ").lower()
 
 
-print(f"Finished")
+print(f"Finished.")
