@@ -1,10 +1,20 @@
-password = "Password"
+MINIMUM_LENGTH = 3
 
-input_password = input("Password: ")
 
-while input_password != password:
-    print(f"Incorrect Password")
-    input_password = input("Password: ")
+def main():
+    password = get_password(MINIMUM_LENGTH)
+    print_asterisk(password)
 
-if input_password == password:
-    print(f"Correct Password")
+
+def get_password(MINIMUM_LENGTH):
+    password = input(f"Enter password with more than {MINIMUM_LENGTH} characters: ")
+
+    while len(password) <= MINIMUM_LENGTH:
+        print("Please enter a password containing more than 3 characters.")
+        password = input(f"Enter password with more than {MINIMUM_LENGTH} characters: ")
+
+    return password
+
+
+def print_asterisk(password):
+    print("*" * len(password))
