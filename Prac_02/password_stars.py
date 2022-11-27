@@ -18,3 +18,6 @@ def get_password(MINIMUM_LENGTH):
 
 def print_asterisk(password):
     print("*" * len(password))
+
+
+main()
