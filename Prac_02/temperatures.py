@@ -21,7 +21,7 @@ def main():
             print(f"Invalid Choice")
         print(menu)
         choice = input(f"Choice: ").lower()
-    print(f"Program Ended")
+    print(f"Program Ended.")
 
 
 def celsius_to_fahrenheit(celsius):
