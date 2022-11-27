@@ -5,7 +5,7 @@ def main():
 
 def determine_grade(score):
     if score < 0 or score > 100:
-        return "Invalid score"
+        return "Invalid Score"
     elif score >= 90:
         return "Excellent"
     elif score >= 50:
